@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			for (j = 0; f_list[i].fs != NULL; j++)
+			for (j = 0; f_list[j].fs != NULL; j++)
 			{
 				if (format[i + 1] == f_list[j].fs[0])
 				{
