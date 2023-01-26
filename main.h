@@ -8,18 +8,19 @@
  * struct format_specifier - Struct op
  *
  * @fs: the format specifier
- * @f: the function associated to fs
+ * @func: the function associated to fs
  */
 struct format_specifier
 {
 	char *fs;
-	int (*f)(va_list);
+	int (*func)(va_list);
 };
 
 typedef struct format_specifier fs_t;
 
-int _printf(const char *format, ...);
 int _putchar(char);
-int print_char(va_list);
-int print_string(va_list);
+int printChar(va_list list);
+int printString(va_list list);
+int _printf(const char *format, ...);
+
 #endif
