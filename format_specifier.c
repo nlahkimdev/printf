@@ -6,7 +6,7 @@
  *
  * Return: all the printed characters
  */
-int print_char(va_list list)
+int printChar(va_list list)
 {
 	_putchar(va_arg(list, int));
 	return (1);
@@ -19,7 +19,7 @@ int print_char(va_list list)
  *
  * Return: all characters printed
  */
-int print_string(va_list list)
+int printString(va_list list)
 {
 	int i;
 	char *str;
