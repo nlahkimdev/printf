@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_char - prints the character
+ * printChar - prints the character
  *
  * @list: arguments
  *
@@ -13,7 +13,7 @@ int printChar(va_list list)
 }
 
 /**
- * print_string - prints a string
+ * printString - prints a string
  *
  * @list: argument's list
  *
